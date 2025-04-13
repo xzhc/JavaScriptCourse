@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      product1 = {
+        name: "basketball",
+        price: 1990,
+      };
+      product2 = {
+        name: "soccer ball",
+        price: 1995,
+      };
+
+      function comparePrice(product1, product2) {
+        return product1.price > product2.price ? product2 : product1;
+      }
+
+      console.log(comparePrice(product1, product2));
+    </script>
+  </body>
+</html>
