@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function checkSearch(array, word) {
+        for (let index = 0; index < array.length; index++) {
+          if (array[index] === word) {
+            return index;
+            break;
+          }
+        }
+        return -1;
+      }
+      console.log(checkSearch(["hi", "hello", "Search", "good"], "hello"));
+      console.log(checkSearch(["hi", "hello", "good"], "good"));
+    </script>
+  </body>
+</html>
