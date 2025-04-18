@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function minMax(nums) {
+        const result = {
+          min: nums[0],
+          max: nums[0],
+        };
+        for (let index = 0; index < nums.length; index++) {
+          result.min = nums[index] > result.min ? result.min : nums[index];
+          result.max = nums[index] < result.max ? result.max : nums[index];
+        }
+        console.log(result);
+      }
+      minMax([]);
+      minMax([3]);
+    </script>
+  </body>
+</html>

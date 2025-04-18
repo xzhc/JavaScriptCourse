@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function countWords(words) {
+        const result = {};
+        for (let index = 0; index < words.length; index++) {
+          const word = words[index];
+          if (!result[word]) {
+            result[word] = 1;
+          } else {
+            result[word]++;
+          }
+        }
+        return result;
+      }
+      console.log(countWords(["apple", "banana", "apple", "pie"]));
+    </script>
+  </body>
+</html>
